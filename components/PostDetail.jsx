@@ -17,7 +17,7 @@ const PostDetail = ({ post }) => {
               tl;<br></br>dr
             </span>
           </div>
-          <div className="ml-8 sm:ml-8 sm:text-lg space-y-6 sm:leading-9">
+          <div className="ml-8 sm:ml-8 text-sm sm:text-lg space-y-6 leading-7 sm:leading-9">
             {post.excerpt}
           </div>
         </div>
@@ -33,7 +33,7 @@ const PostDetail = ({ post }) => {
             </span>
           </div>
         </div>
-        <div className="mt-8 sm:mt-16 text-base sm:text-lg space-y-6 leading-8 sm:leading-9">
+        <div className="mt-8 sm:mt-16 text-sm sm:text-lg space-y-6 leading-8 sm:leading-9">
           <RichText
             content={content}
             renderers={{
@@ -63,13 +63,13 @@ const PostDetail = ({ post }) => {
                 </ol>),
               ul: ({ children }) => (
                 <ul
-                  className="pl-2 sm:pl-10 pb-1 list-square list-outside"
+                  className="pl-2 sm:pl-10 sm:pb-1 list-square list-outside"
                 >
                   {children}
                 </ul>),
               li: ({ children }) => (
                 <li
-                  className="pl-1 sm:pl-3 m-3 leading-8 sm:leading-8"
+                  className="pl-1 sm:pl-3 m-2 leading-7 sm:leading-8"
                 >
                   {children}
                 </li>)

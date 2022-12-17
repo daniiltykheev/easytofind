@@ -12,7 +12,7 @@ const PostDetails = ({ post }) => {
   }
 
   return (
-    <div className="container mx-auto max-w-3xl mt-12 mb-8">
+    <div className="container mx-auto max-w-lg sm:max-w-3xl mt-12 mb-8">
       <div className="grid grid-cols-1 lg:grid-cols-16 gap-12">
         <div className="lg:col-span-8 col-span-1">
           <PostDetail post={post} />

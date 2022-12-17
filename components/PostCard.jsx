@@ -9,12 +9,12 @@ const PostCard = ({ post }) => {
         <NextLink href={`/post/${post.slug}`}>{post.title}</NextLink>
       </h1>
       <div className="block flex flex-start items-left justify-start mb-2 w-full"></div>
-      <p className="text-left sm:text-lg text-slate-900 font-normal mb-4">
+      <p className="text-left text-sm sm:text-lg leading-7 text-slate-900 font-normal mb-5 sm:mb-4">
         {post.excerpt}
       </p>
       <div className="flex flex-start">
         <a className="group flex flext-start " href={`/post/${post.slug}`}>
-          <span className=" text-s sm:text-lg font-medium underline cursor-pointer hover:opacity-50 ">
+          <span className="text-sm sm:text-lg font-medium underline cursor-pointer hover:opacity-50 ">
             Read the whole thing
           </span>
           <div>

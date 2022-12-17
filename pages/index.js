@@ -38,7 +38,7 @@ export default function Home({ posts }) {
             </p>
           </div>
           <div>
-            <p className="text-slate-900 font-normal text-l sm:text-lg leading-12">
+            <p className="text-slate-900 font-normal text-base sm:text-lg leading-7 sm:leading-12">
               Hey, I'm Daniil. I write about product management, user research and whatever I find
               interesting or useful. Could be anything from a small rant about
               soft skills to a proper book review. Say hey back on{" "}
