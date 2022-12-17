@@ -33,7 +33,7 @@ const PostDetail = ({ post }) => {
             </span>
           </div>
         </div>
-        <div className="mt-8 sm:mt-16 text-sm sm:text-lg space-y-6 leading-8 sm:leading-9">
+        <div className="mt-8 sm:mt-16 text-sm sm:text-lg space-y-6 leading-7 sm:leading-9">
           <RichText
             content={content}
             renderers={{
@@ -69,10 +69,16 @@ const PostDetail = ({ post }) => {
                 </ul>),
               li: ({ children }) => (
                 <li
-                  className="pl-1 sm:pl-3 m-2 leading-7 sm:leading-8"
+                  className="pl-1 sm:pl-3 m-2 leading-6 sm:leading-8"
                 >
                   {children}
-                </li>)
+                </li>),
+              code: ({ children }) => (
+                <code
+                  className="bg-zinc-100 rounded box-decoration-clone py-1 px-2"
+                >
+                  {children}
+                </code>),
             }}
           />
         </div>

@@ -30,7 +30,7 @@ export default function Home({ posts }) {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />{" "}
       </Head>
-      <div className="grid grid-cols-1 lg:grid-cols-16 gap-12 mb-14 sm:mb-24">
+      <div className="grid grid-cols-1 lg:grid-cols-16 gap-12 mb-14 sm:mb-20">
         <div className="lg:col-span-8 col-span-1">
           <div className="flex justify-start mb-4 sm:mb-8">
             <p className="text-slate-900 font-bold text-2xl sm:text-4xl">
@@ -40,8 +40,7 @@ export default function Home({ posts }) {
           <div>
             <p className="text-slate-900 font-normal text-base sm:text-lg leading-7 sm:leading-12">
               Hey, I'm Daniil. I write about product management, user research and whatever I find
-              interesting or useful. Could be anything from a small rant about
-              soft skills to a proper book review. Say hey back on{" "}
+              interesting or useful. Say hey back on{" "}
               <a
                 className="text-purple-700 link link-underline"
                 href="https://t.me/danieltykheev"
@@ -57,7 +56,6 @@ export default function Home({ posts }) {
               </a>
               .
             </p>
-            <hr className="block hidden mt-8 sm:mt-12 bg-purple-800" />
           </div>
         </div>
       </div>
