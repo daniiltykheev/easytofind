@@ -13,7 +13,7 @@ const About = ({ about }) => {
             <h1 className="text-left sm:mb-8 text-2xl sm:text-4xl font-bold text-slate-900 cursor-default">
               About
             </h1>
-            <div className="mt-8 sm:mt-10 text-base sm:text-lg space-y-6 leading-8 sm:leading-9">
+            <div className="mt-8 sm:mt-10 text-sm sm:text-lg space-y-6 leading-7 sm:leading-9">
                 <RichText
                     content={content}
                     renderers={{

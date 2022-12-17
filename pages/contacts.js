@@ -5,11 +5,11 @@ const Contacts = () => {
     <div className="container mx-auto max-w-screen-sm sm:max-w-3xl mt-12 mb-8">
       <div className="grid grid-cols-1 lg:grid-cols-16 gap-12">
         <div className="lg:col-span-8 col-span-1">
-          <div className="bg-transparent pl-0 pb-12 mb-16">
+          <div className="bg-transparent pl-0 pb-8 sm:pb-16">
             <h1 className="text-left mb-8 text-4xl font-bold text-slate-900 cursor-default">
               Let's talk
             </h1>
-            <div className="mt-16 text-lg space-y-6 leading-9">
+            <div className="mt-10 text-lg space-y-6 leading-9">
               <span>
                 {" "}
                 Use my email or telegram to contact me:

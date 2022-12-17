@@ -9,11 +9,11 @@ const Experience = ({ experience }) => {
     <div className="container mx-auto max-w-screen-sm sm:max-w-3xl mt-12 mb-8">
       <div className="grid grid-cols-1 lg:grid-cols-16 gap-12">
         <div className="lg:col-span-8 col-span-1">
-          <div className="bg-transparent pl-0 pb-12 mb-16">
+          <div className="bg-transparent pl-0 pb-8 sm:pb-16">
             <h1 className="text-left mb-8 text-4xl font-bold text-slate-900 cursor-default">
               Experience
             </h1>
-            <div className="flex flex-start mt-16">
+            <div className="flex flex-start mt-10">
               <div className="w-14">
                 <span className="text-2xl text-purple-700 font-bold">
                   tl;<br></br>dr
