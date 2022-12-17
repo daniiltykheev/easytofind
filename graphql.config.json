@@ -1,0 +1,16 @@
+{
+    "projects": {
+        "ietf_gcms_blog": {
+            "extensions": {
+                "endpoints": {
+                    "default": {
+                        "url": "https://api-eu-central-1.graphcms.com/v2/ckxj456vs2tem01z01wdg39e9/master",
+                        "headers": {
+                            "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImdjbXMtbWFpbi1wcm9kdWN0aW9uIn0.eyJ2ZXJzaW9uIjozLCJpYXQiOjE2NDUwMjM5NzUsImF1ZCI6WyJodHRwczovL2FwaS1ldS1jZW50cmFsLTEuZ3JhcGhjbXMuY29tL3YyL2NreGo0NTZ2czJ0ZW0wMXowMXdkZzM5ZTkvbWFzdGVyIiwiaHR0cHM6Ly9tYW5hZ2VtZW50LW5leHQuZ3JhcGhjbXMuY29tIl0sImlzcyI6Imh0dHBzOi8vbWFuYWdlbWVudC5ncmFwaGNtcy5jb20vIiwic3ViIjoiODQwYzFkNTktMzhmYy00YWNjLTk5N2MtNmQxMjBhNjQxZmQ4IiwianRpIjoiY2t6cG9zdXhuNTJieDAxeXllZGxlaGhwaCJ9.tA-qBWqkTS6EE5qOMq5ye_zOYLv885SC2F-RxOduacZZSJMPodWEaIGI0B2Ee71n7oa-TtSCaRnuD1RPbVMvINM0t5TV4Ri-Vo5wAZBarySwXbNeqXjZSdN_wZbieuLz8CsusoZM38txrKCMGRm_kSklwrwi0AW9TI53-BbbzlEYR3NT_ZOLYWc9U4dxxsUnXbAva8vGbh1egLB3S5fCrovRk6pLDyzFDFy9KoHBKCE7WvUA38IkWTtM4iNhGUsD9K5VVbaNaCo2LyxuOwczpKbBWrU2_0Vyn5BKTbBKsWKRJi3JHHSZQVAr5cb89flAd010HNaqlXZ1THuqUgnLGlUahzlN5ZaijSNq4c_JeRr8au7fwSCySC8PNCzB5BJnxl7DVT9EEzx8eKDQY5gh5_fSH-ad6tabwLfTHNeCwy7e-ARCd4AGvxPuitp90cGXi7xdSNUAh1iO6QhDeXVN_QLrUiCgtz5Fhj-aR2O7zDaTKSm6Vr3_gPcNlI7kT4e9VQdTCYXN-HZzfLDAXGkkvoZ2X0w5ZmSohIn6GP2_efaJO9mMdT3KkSQZRpMfBwThSD5Ox5e6iGFyiTe-Da4T_v8mGmWSb-Nvs9b9RfwSMHnAW1efEo-Zql9vAb1PaA3vIuN9we0GqZSGgS0mNBtsdNvzuoIP-MjQz183JXpnFcA"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
