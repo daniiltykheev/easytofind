@@ -6,7 +6,7 @@ const About = ({ about }) => {
     const content = about.fullText.json;
 
   return (
-    <div className="container mx-auto max-w-screen-sm sm:max-w-3xl mt-12 mb-8">
+    <div className="container mx-auto max-w-screen-sm sm:max-w-3xl mt-20 sm:mt-32 mb-8 px-4 sm:px-0">
       <div className="grid grid-cols-1 lg:grid-cols-16 gap-12">
         <div className="lg:col-span-8 col-span-1">
           <div className="bg-transparent pl-0 pb-8 sm:pb-16">

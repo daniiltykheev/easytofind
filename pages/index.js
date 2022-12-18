@@ -4,7 +4,7 @@ import { getPosts } from "../services";
 
 export default function Home({ posts }) {
   return (
-    <div className="container mx-auto max-w-screen-sm sm:max-w-3xl mt-12">
+    <div className="container mx-auto max-w-screen-sm sm:max-w-3xl mt-20 sm:mt-32 px-4 sm:px-0">
       <Head>
         <title>I am easy to find</title>
         <meta name="description" content="Daniil's blog" />
