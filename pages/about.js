@@ -1,12 +1,16 @@
 import React from "react";
 import { getAbout } from "../services";
 import { RichText } from "@graphcms/rich-text-react-renderer";
+import { Helmet } from 'react-helmet'
 
 const About = ({ about }) => {
     const content = about.fullText.json;
 
   return (
     <div className="container mx-auto max-w-screen-sm sm:max-w-3xl mt-20 sm:mt-32 mb-8 px-4 sm:px-0">
+      <Helmet>
+        <title>About</title>
+      </Helmet>
       <div className="grid grid-cols-1 lg:grid-cols-16 gap-12">
         <div className="lg:col-span-8 col-span-1">
           <div className="bg-transparent pl-0 pb-8 sm:pb-16">
