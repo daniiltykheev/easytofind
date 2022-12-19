@@ -19,16 +19,16 @@ const Header = () => {
                 About
               </span>
             </Link>
-            <a href={"/experience"}>
+            <Link href={"/experience"}>
               <span className="hidden sm:block px-8 py-2 link-animate text-lg font-medium hover:opacity-50 cursor-pointer">
                 Experience
               </span>
-            </a>
-            <a href={"/contacts"}>
+            </Link>
+            <Link href={"/contacts"}>
               <span className="hidden sm:block pl-6 py-2 link-animate text-lg font-medium hover:opacity-50 cursor-pointer">
                 Contact
               </span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
