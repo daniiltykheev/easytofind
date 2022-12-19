@@ -14,15 +14,15 @@ const About = ({ about }) => {
       <div className="grid grid-cols-1 lg:grid-cols-16 gap-12">
         <div className="lg:col-span-8 col-span-1">
           <div className="bg-transparent pl-0 pb-8 sm:pb-16">
-            <h1 className="text-left sm:mb-8 text-2xl sm:text-4xl font-bold text-slate-900 cursor-default">
+            <h1 className="text-left sm:mb-8 text-2xl sm:text-4xl font-bold text-slate-900 dark:text-neutral-200 cursor-default">
               About
             </h1>
-            <div className="mt-8 sm:mt-10 text-sm sm:text-lg space-y-6 leading-7 sm:leading-9">
+            <div className="mt-8 sm:mt-10 text-sm sm:text-lg space-y-6 leading-7 sm:leading-9 text-slate-900 dark:text-neutral-200">
                 <RichText
                     content={content}
                     renderers={{
                         a: ({ children, href }) => (
-                          <a class="rt-link" href={href}>
+                          <a class="rt-link dark:text-purple-400" href={href}>
                             {children}
                           </a>
                         ),

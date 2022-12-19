@@ -25,7 +25,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: "iA Writer Duo", sans-serif;
-  background: #d6d3d1;
+  background: #d6d3d1; 
+  
 
   &:before {
     content: "";
@@ -46,18 +47,19 @@ body {
     padding-bottom: 0px;
   }
 
-  // ul {
-  //   list-style: outside;
-  //   list-style-type: square;
-  //   padding-left: 30px;
-  //   padding-bottom: 5px;
-  // }
+  @media (prefers-color-scheme: dark) {
+    // original
+    background: rgb(39 39 42);
 
-  // ul li {
-  //   padding-left: 10px;
-  //   margin: 0.75rem;
-  //   line-height: 32px;
-  // }
+    // another option
+    // background: rgb(23 23 23);
+
+    // another option
+    // background: rgb(24 24 27);
+
+    // another option
+    // background: rgb(41 37 36);
+  }
 
   footer {
     li {
@@ -99,6 +101,13 @@ hr {
   border-left-color: #7e22ce;
   border-right-color: #7e22ce;
   border-top-color: #7e22ce;
+  @media (prefers-color-scheme: dark) {
+    background-color: rgb(192 132 252);
+    border-bottom-color: rgb(192 132 252);
+    border-left-color: rgb(192 132 252);
+    border-right-color: rgb(192 132 252);
+    border-top-color: rgb(192 132 252);
+  }
 }
 
 .text-shadow {
@@ -154,8 +163,4 @@ hr {
 
 .rt-link:hover {
   opacity: 50%;
-}
-
-.rt-ul {
-  list-style: circle outside;
 }

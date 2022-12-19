@@ -33,23 +33,23 @@ export default function Home({ posts }) {
       <div className="grid grid-cols-1 lg:grid-cols-16 gap-12 mb-14 sm:mb-20">
         <div className="lg:col-span-8 col-span-1">
           <div className="flex justify-start mb-4 sm:mb-8">
-            <p className="text-slate-900 font-bold text-2xl sm:text-4xl">
+            <h1 className="text-slate-900 dark:text-neutral-100 font-bold text-2xl sm:text-4xl">
               Welcome to my blog!
-            </p>
+            </h1>
           </div>
           <div>
-            <p className="text-slate-900 font-normal text-base sm:text-lg leading-7 sm:leading-12">
+            <p className="text-slate-900 dark:text-neutral-200 font-normal text-base sm:text-xl leading-7 sm:leading-12">
               Hey, I'm Daniil. I write about product management, user research and whatever I find
               interesting or useful. Say hey back on{" "}
               <a
-                className="text-purple-700 link link-underline"
-                href="https://t.me/danieltykheev"
+                className="text-purple-700 dark:text-purple-400 link link-underline"
+                href="https://t.me/daniiltykheev"
               >
                 Telegram
               </a>{" "}
               or{" "}
               <a
-                className="text-purple-700 link link-underline"
+                className="text-purple-700 dark:text-purple-400 link link-underline"
                 href="https://www.linkedin.com/in/daniil-tykheev-2a156ba7/"
               >
                 LinkedIn

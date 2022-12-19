@@ -3,13 +3,13 @@ import React, { useContext } from "react";
 const Footer = () => {
   return (
     <footer className="mx-auto max-w-5xl">
-      <div className="container mx-auto max-w-screen-sm sm:max-w-3xl mb-8 px-4 sm:px-0">
-        <hr className="bg-purple-800 mb-12" />
+      <div className="container mx-auto max-w-screen-sm sm:max-w-3xl mb-8 px-4 sm:px-0 text-neutral-700 dark:text-neutral-200">
+        <hr className="bg-purple-800 dark:bg-purple-300 mb-12" />
         <div className="grid grid-cols-2 lg:grid-cols-16 gap-12 mb-28">
           <ol className="grid grid-cols-1">
             <li>
               {" "}
-              <a href="https://t.me/danieltykheev">Telegram</a>{" "}
+              <a href="https://t.me/daniiltykheev">Telegram</a>{" "}
             </li>
             <li>
               {" "}
