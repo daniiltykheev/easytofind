@@ -23,11 +23,11 @@ const Experience = ({ experience }) => {
                   tl;<br></br>dr
                 </span>
               </div>
-              <div className="space-y-6 ml-8 text-lg leading-9 dark:text-neutral-300">
+              <div className="space-y-6 ml-8 text-lg leading-8 dark:text-neutral-300">
                 {experience.tldr}
               </div>
             </div>
-            <div className="mt-10 text-lg space-y-6 leading-9 dark:text-neutral-200">
+            <div className="mt-10 text-lg space-y-6 leading-8 dark:text-neutral-200">
                 <RichText
                     content={content}
                     renderers={{

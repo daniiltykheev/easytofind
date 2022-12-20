@@ -17,7 +17,7 @@ const PostDetail = ({ post }) => {
               tl;<br></br>dr
             </span>
           </div>
-          <div className="ml-8 sm:ml-8 text-sm sm:text-lg space-y-6 leading-7 sm:leading-9 dark:text-neutral-300">
+          <div className="ml-8 sm:ml-8 text-sm sm:text-lg space-y-6 leading-7 sm:leading-8 dark:text-neutral-300">
             {post.excerpt}
           </div>
         </div>
@@ -33,7 +33,7 @@ const PostDetail = ({ post }) => {
             </span>
           </div>
         </div>
-        <div className="mt-8 sm:mt-16 text-sm sm:text-lg space-y-6 leading-7 sm:leading-9 dark:text-neutral-200">
+        <div className="mt-8 sm:mt-16 text-sm sm:text-lg space-y-6 leading-7 sm:leading-8 dark:text-neutral-200">
           <RichText
             content={content}
             renderers={{

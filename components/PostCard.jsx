@@ -16,13 +16,6 @@ const PostCard = ({ post }) => {
           <span className="text-sm sm:text-lg font-medium underline text-neutral-700 dark:text-neutral-300 cursor-pointer hover:opacity-50">
             Read the whole thing
           </span>
-          <div>
-            {/* <img
-              className="hidden sm:block ml-2 sm:mt-2.5 sm:mt-[5px] group-hover:translate-x-3 duration-300 group-hover:opacity-50"
-              src="/arrow-right-circle.svg"
-              alt=""
-            /> */}
-          </div>
         </a>
       </div>
     </div>
