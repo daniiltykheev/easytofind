@@ -15,17 +15,17 @@ const Header = () => {
           </div>
           <div className="flex flex-end">
             <Link href={"/about"}>
-              <span className="px-0 pl-4 sm:pr-8 py-2 link-animate text-sm sm:text-lg font-medium sm:font-medium hover:opacity-50 cursor-pointer">
+              <span className="px-0 pl-4 sm:pr-4 py-2 link-animate text-sm sm:text-lg font-medium sm:font-medium hover:opacity-50 cursor-pointer">
                 About
               </span>
             </Link>
             <Link href={"/experience"}>
-              <span className="hidden sm:block px-8 py-2 link-animate text-lg font-medium hover:opacity-50 cursor-pointer">
+              <span className="hidden sm:block px-4 py-2 link-animate text-lg font-medium hover:opacity-50 cursor-pointer">
                 Experience
               </span>
             </Link>
             <Link href={"/contacts"}>
-              <span className="hidden sm:block pl-6 py-2 link-animate text-lg font-medium hover:opacity-50 cursor-pointer">
+              <span className="hidden sm:block pl-3 py-2 link-animate text-lg font-medium hover:opacity-50 cursor-pointer">
                 Contact
               </span>
             </Link>
