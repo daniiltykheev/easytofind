@@ -32,7 +32,7 @@ const Experience = ({ experience }) => {
                     content={content}
                     renderers={{
                         a: ({ children, href }) => (
-                          <a class="rt-link dark:text-purple-400" href={href}>
+                          <a class="cursor-pointer text-purple-700 dark:text-purple-400 hover:opacity-50" href={href}>
                             {children}
                           </a>
                         ),
