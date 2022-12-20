@@ -4,7 +4,7 @@ import NextLink from "next/link";
 const PostCard = ({ post }) => {
   return (
     <div className="bg-transparent pl-0 mb-16 sm:mb-20">
-      <h1 className="text-left mb-4 sm:mb-6 cursor-pointer text-xl sm:text-xl font-bold text-neutral-700 dark:text-neutral-100 link link-underline">
+      <h1 className="text-left mb-4 sm:mb-6 cursor-pointer text-xl sm:text-xl font-bold text-slate-900 dark:text-neutral-100 link link-underline">
         <NextLink href={`/post/${post.slug}`}>{post.title}</NextLink>
       </h1>
       <div className="block flex flex-start items-left justify-start mb-2 w-full"></div>
