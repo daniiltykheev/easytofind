@@ -52,9 +52,9 @@ const PostDetail = ({ post }) => {
                   {children}
                 </blockquote>
               ),
-              h1: ({ children }) => <h1 className={`text-xl sm:text-2xl mb-6 font-bold text-slate-900 dark:text-neutral-200`}>{children}</h1>,
-              h2: ({ children }) => <h2 className={`text-l sm:text-xl mb-4 font-bold text-slate-900 dark:text-neutral-200`}>{children}</h2>,
-              h3: ({ children }) => <h3 className={`text-m sm:text-l mb-2 font-bold text-slate-900 dark:text-neutral-200`}>{children}</h3>,
+              h1: ({ children }) => <h1 className={`text-xl sm:text-2xl pt-3 sm:pt-6 font-bold text-slate-900 dark:text-neutral-200`}>{children}</h1>,
+              h2: ({ children }) => <h2 className={`text-l sm:text-xl pt-2 sm:pt-4 font-bold text-slate-900 dark:text-neutral-200`}>{children}</h2>,
+              h3: ({ children }) => <h3 className={`text-m sm:text-l pt-1 sm:pt-2 font-bold text-slate-900 dark:text-neutral-200`}>{children}</h3>,
               ol: ({ children }) => (
                 <ol
                   className="pl-6 sm:pl-10 pb-1 list-decimal"

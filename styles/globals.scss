@@ -76,6 +76,9 @@ body {
   border-radius: 15px;
   @media (prefers-color-scheme: dark) {
     background: rgb(82 82 91);
+    a {
+      color: rgb(192 132 252);
+    };
   }
 }
 

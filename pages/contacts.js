@@ -20,14 +20,14 @@ const Contacts = () => {
                 <br></br>
                 <a
                   href="mailto:daniiltykheev@gmail.com"
-                  className="font-bold text-violet-800 dark:text-purple-400 link link-underline"
+                  className="font-bold text-purple-700 dark:text-purple-400 link link-underline"
                 >
                   daniiltykheev@gmail.com
                 </a>
                 <br></br>
                 <a
                   href="https://t.me/daniiltykheev"
-                  className="font-bold text-violet-800 dark:text-purple-400 link link-underline"
+                  className="font-bold text-purple-700 dark:text-purple-400 link link-underline"
                 >
                   t.me/daniiltykheev
                 </a>
