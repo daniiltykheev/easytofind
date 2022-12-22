@@ -17,7 +17,7 @@ const PostDetail = ({ post }) => {
               tl;<br></br>dr
             </span>
           </div>
-          <div className="ml-8 sm:ml-8 text-sm sm:text-lg space-y-6 leading-7 sm:leading-8 dark:text-neutral-300">
+          <div className="ml-8 sm:ml-8 text-sm sm:text-lg space-y-6 leading-6 sm:leading-8 dark:text-neutral-300">
             {post.excerpt}
           </div>
         </div>
@@ -33,7 +33,7 @@ const PostDetail = ({ post }) => {
             </span>
           </div>
         </div>
-        <div className="mt-8 sm:mt-16 text-sm sm:text-lg space-y-6 leading-7 sm:leading-8 dark:text-neutral-200">
+        <div className="mt-8 sm:mt-16 text-sm sm:text-lg space-y-6 leading-6 sm:leading-8 dark:text-neutral-200">
           <RichText
             content={content}
             renderers={{
@@ -53,8 +53,8 @@ const PostDetail = ({ post }) => {
                 </blockquote>
               ),
               h1: ({ children }) => <h1 className={`text-xl sm:text-2xl pt-3 sm:pt-6 font-bold text-slate-900 dark:text-neutral-200`}>{children}</h1>,
-              h2: ({ children }) => <h2 className={`text-l sm:text-xl pt-2 sm:pt-4 font-bold text-slate-900 dark:text-neutral-200`}>{children}</h2>,
-              h3: ({ children }) => <h3 className={`text-m sm:text-l pt-1 sm:pt-2 font-bold text-slate-900 dark:text-neutral-200`}>{children}</h3>,
+              h2: ({ children }) => <h2 className={`text-lg sm:text-xl pt-2 sm:pt-4 font-bold text-slate-900 dark:text-neutral-200`}>{children}</h2>,
+              h3: ({ children }) => <h3 className={`text-base sm:text-l pt-1 sm:pt-2 font-bold text-slate-900 dark:text-neutral-200`}>{children}</h3>,
               ol: ({ children }) => (
                 <ol
                   className="pl-6 sm:pl-10 pb-1 list-decimal"

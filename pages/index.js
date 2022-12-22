@@ -38,7 +38,7 @@ export default function Home({ posts }) {
             </h1>
           </div>
           <div>
-            <p className="text-slate-900 dark:text-neutral-200 font-normal text-base sm:text-xl leading-7 sm:leading-12">
+            <p className="text-slate-900 dark:text-neutral-200 font-normal text-base sm:text-xl leading-6 sm:leading-12">
               Hey, I'm Daniil. I write about product management, user research and whatever I find
               interesting or useful. Say hey back on{" "}
               <a
