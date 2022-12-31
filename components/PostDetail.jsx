@@ -44,10 +44,11 @@ const PostDetail = ({ post }) => {
               ),
               blockquote: ({ children }) => (
                 <blockquote
-                  style={{
-                    paddingLeft: '20px',
-                    borderLeft: '4px solid #7e22ce dark:text-purple-400',
-                  }}
+                  // style={{
+                  //   paddingLeft: '20px',
+                  //   borderLeft: '4px solid #7e22ce dark:text-purple-400',
+                  // }}
+                  className="pl-5 border-l-4 border-purple-700 dark:border-purple-400"
                 >
                   {children}
                 </blockquote>
