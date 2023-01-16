@@ -1,8 +1,11 @@
 import Head from "next/head";
 import { PostCard, Categories, PostWidget } from "../components";
 import { getPosts } from "../services";
+import { useTheme } from "next-themes";
 
 export default function Home({ posts }) {
+  const {theme, setTheme} = useTheme()
+
   return (
     <div className="container mx-auto max-w-screen-sm sm:max-w-3xl mt-20 sm:mt-32 px-4 sm:px-0">
       <Head>
