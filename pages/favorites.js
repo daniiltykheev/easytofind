@@ -1,12 +1,10 @@
 import React from "react";
-import { getAbout } from "../services";
+import { getFavorites } from "../services";
 import { RichText } from "@graphcms/rich-text-react-renderer";
 import { Helmet } from 'react-helmet'
 import Link from "next/link";
 
-const About = ({ about }) => {
-    const content = about.fullText.json;
-
+const Favorites = ({ favorites }) => {
   return (
     <div className="container mx-auto max-w-screen-sm sm:max-w-3xl mt-20 sm:mt-32 mb-8 px-4 sm:px-0">
       <Helmet>
@@ -19,13 +17,13 @@ const About = ({ about }) => {
               About
             </h1>
             <div className="hidden sm:flex justify-between pr-24 py-3 border-b border-slate-900 dark:border-slate-200 font-bold text-lg">
-              <Link href="/about" class="cursor-pointer hover:opacity-50 text-purple-700 dark:text-purple-400">
+              <Link href="/about" class="cursor-pointer hover:opacity-50">
                 What is this?
               </Link>
               <Link href="/hiw" class="cursor-pointer hover:opacity-50">
                 How I work
               </Link>
-              <Link href="/favorites" class="cursor-pointer hover:opacity-50">
+              <Link href="/favorites" class="cursor-pointer hover:opacity-50 text-purple-700 dark:text-purple-400">
                 Favorites
               </Link>
               <Link href="/experience" class="cursor-pointer hover:opacity-50">
@@ -40,13 +38,13 @@ const About = ({ about }) => {
                 </svg>
               </div>
               <div class="hidden group-hover:block absolute outline outline-2 outline-zinc-800 dark:outline-neutral-200 left-0 bg-neutral-300 dark:bg-zinc-800 w-60 px-2 py-4 mt-1.5 min-w-full">
-                <Link href="/about" class="block cursor-pointer hover:opacity-50 text-purple-700 dark:text-purple-400 pb-4 text-sm font-bold">
+                <Link href="/about" class="block cursor-pointer hover:opacity-50 text-slate-800 dark:text-neutral-200 pb-4 text-sm">
                   What is this?
                 </Link>
                 <Link href="/hiw" class="block cursor-pointer hover:opacity-50 text-slate-800 dark:text-neutral-200 pb-4 text-sm">
                   How I work
                 </Link>
-                <Link href="/favorites" class="block cursor-pointer hover:opacity-50 text-slate-800 dark:text-neutral-200 pb-4 text-sm">
+                <Link href="/favorites" class="block cursor-pointer hover:opacity-50 text-purple-700 dark:text-purple-400 pb-4 text-sm font-bold">
                   Favorites
                 </Link>
                 <Link href="/experience" class="block cursor-pointer hover:opacity-50 text-slate-800 dark:text-neutral-200 pb-2 text-sm">
@@ -55,16 +53,8 @@ const About = ({ about }) => {
               </div>
             </div>
             <div className="mt-8 sm:mt-10 text-sm sm:text-lg space-y-6 leading-6 sm:leading-8 text-slate-900 dark:text-neutral-200">
-                <RichText
-                    content={content}
-                    renderers={{
-                        a: ({ children, href }) => (
-                          <a class="cursor-pointer text-purple-700 dark:text-purple-400 hover:opacity-50" href={href}>
-                            {children}
-                          </a>
-                        ),
-                      }}
-                /> 
+                    <p>This section is WIP</p>
+                    {favorites.books}
             </div>
           </div>
         </div>
@@ -73,12 +63,12 @@ const About = ({ about }) => {
   );
 }
 
-export default About;
+export default Favorites;
 
 export async function getStaticProps() {
-  const about = (await getAbout()) || [];
+  const favorites = (await getFavorites()) || [];
 
   return {
-    props: { about },
+    props: { favorites },
   };
 }

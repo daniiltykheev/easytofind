@@ -77,6 +77,22 @@ export const getAbout = async () => {
   return result.about;
 };
 
+export const getHIW = async () => {
+  const query = gql `
+    query HIWQuery {
+      howIWork(where: {id: "cld0gnmfpgo5d0aunr5n0j53g"}) {
+        text {
+          json
+        }
+      }
+    }  
+  `;
+
+  const result = await request(graphqlAPI, query);
+
+  return result.howIWork;
+};
+
 export const getSidebar = async () => {
   const query = gql `
     query sidebarQuery {
@@ -93,3 +109,22 @@ export const getSidebar = async () => {
   return result.sidebar;
 };
 
+export const getFavorites = async () => {
+  const query = gql `
+    query Favorites {
+      favorites (where: {id: "clcz35yda2zua0bujxpg3bxsx"}) {
+        books {
+          title
+          link
+          cover {
+            url
+          }
+        }
+      }
+    }
+  `;
+
+  const result = await request(graphqlAPI, query);
+
+  return result.favorites;
+};

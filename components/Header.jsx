@@ -15,7 +15,7 @@ const Header = () => {
           <div className="flex flex-start">
             <Link href={"/"}>
               <span className="sm:block py-2 pr-4 link-animate text-sm sm:text-lg font-medium sm:font-medium hover:opacity-50 cursor-pointer">
-                Blog
+                Home
               </span>
             </Link>
             <Link href={"/about"}>
@@ -23,16 +23,9 @@ const Header = () => {
                 About
               </span>
             </Link>
-          </div>
-          <div className="flex flex-end">
             <Link href={"/about"}>
               <span className="hidden sm:block px-0 pl-4 sm:pr-4 py-2 link-animate text-sm sm:text-lg font-medium sm:font-medium hover:opacity-50 cursor-pointer">
                 About
-              </span>
-            </Link>
-            <Link href={"/experience"}>
-              <span className="hidden sm:block px-4 py-2 link-animate text-lg font-medium hover:opacity-50 cursor-pointer">
-                Experience
               </span>
             </Link>
             <Link href={"/contacts"}>
@@ -40,11 +33,15 @@ const Header = () => {
                 Contact
               </span>
             </Link>
-            <div className="flex sm:items-center pl-8 sm:pl-2">
+          </div>
+          <div className="flex flex-end">
+            <div className="flex sm:items-center pl-8 sm:pl-4">
               <button
                   onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
-                  className='w-9 h-9 rounded-lg bg-neutral-100 dark:bg-zinc-600'>
-                  {theme === 'light' ? <img src="/moon.svg" alt="moon" /> : <img src="/sun.svg"/>}
+                  // className='w-9 h-9 rounded-lg bg-neutral-100 dark:bg-zinc-600'
+                  >
+                  {theme === 'light' ? <span className="py-2 link-animate text-sm sm:text-lg font-medium hover:opacity-50 cursor-pointer">Dark</span> : <span className="py-2 link-animate text-sm sm:text-lg font-medium hover:opacity-50 cursor-pointer">Light</span>}
+                  {/* {theme === 'light' ? <img src="/moon.svg" alt="moon" /> : <img src="/sun.svg"/>} */}
               </button>
             </div>
           </div>
