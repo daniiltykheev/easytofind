@@ -16,17 +16,17 @@ const Favorites = ({ favorites }) => {
             <h1 className="text-left mb-12 text-2xl sm:text-4xl font-bold text-slate-900 dark:text-neutral-200 cursor-default">
               About
             </h1>
-            <div className="hidden sm:flex justify-between pr-24 py-3 border-b border-slate-900 dark:border-slate-200 font-bold text-lg">
-              <Link href="/about" class="cursor-pointer hover:opacity-50">
+            <div className="hidden sm:flex justify-start py-3 border-b border-slate-900 dark:border-slate-200 font-bold text-lg">
+              <Link href="/about" class="pr-16 cursor-pointer hover:opacity-50">
                 What is this?
               </Link>
-              <Link href="/hiw" class="cursor-pointer hover:opacity-50">
+              {/* <Link href="/hiw" class="cursor-pointer hover:opacity-50">
                 How I work
-              </Link>
-              <Link href="/favorites" class="cursor-pointer hover:opacity-50 text-purple-700 dark:text-purple-400">
+              </Link> */}
+              <Link href="/favorites" class="pr-16 cursor-pointer hover:opacity-50 text-purple-700 dark:text-purple-400">
                 Favorites
               </Link>
-              <Link href="/experience" class="cursor-pointer hover:opacity-50">
+              <Link href="/experience" class="pr-16 cursor-pointer hover:opacity-50">
                 Experience
               </Link>
             </div>
@@ -41,9 +41,9 @@ const Favorites = ({ favorites }) => {
                 <Link href="/about" class="block cursor-pointer hover:opacity-50 text-slate-800 dark:text-neutral-200 pb-4 text-sm">
                   What is this?
                 </Link>
-                <Link href="/hiw" class="block cursor-pointer hover:opacity-50 text-slate-800 dark:text-neutral-200 pb-4 text-sm">
+                {/* <Link href="/hiw" class="block cursor-pointer hover:opacity-50 text-slate-800 dark:text-neutral-200 pb-4 text-sm">
                   How I work
-                </Link>
+                </Link> */}
                 <Link href="/favorites" class="block cursor-pointer hover:opacity-50 text-purple-700 dark:text-purple-400 pb-4 text-sm font-bold">
                   Favorites
                 </Link>

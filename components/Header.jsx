@@ -38,6 +38,7 @@ const Header = () => {
             <div className="flex sm:items-center pl-8 sm:pl-4">
               <button
                   onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+                  // className=''
                   // className='w-9 h-9 rounded-lg bg-neutral-100 dark:bg-zinc-600'
                   >
                   {theme === 'light' ? <span className="py-2 link-animate text-sm sm:text-lg font-medium hover:opacity-50 cursor-pointer">Dark</span> : <span className="py-2 link-animate text-sm sm:text-lg font-medium hover:opacity-50 cursor-pointer">Light</span>}

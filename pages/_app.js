@@ -7,7 +7,7 @@ import { ThemeProvider } from "next-themes";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider attribute='class'>
+    <ThemeProvider attribute='class' enableSystem={false} defaultTheme="dark">
       <Layout>
         <Head>
           <title>I am easy to find</title>
