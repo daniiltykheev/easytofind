@@ -11,6 +11,7 @@ export const getPosts = async () => {
             slug
             title
             excerpt
+            createdAt
           }
         }
       }
@@ -126,5 +127,5 @@ export const getFavorites = async () => {
 
   const result = await request(graphqlAPI, query);
 
-  return result.favorites;
+  return result.favorites.books;
 };

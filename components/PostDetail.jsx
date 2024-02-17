@@ -23,9 +23,7 @@ const PostDetail = ({ post }) => {
         </div>
         <div className="flex flex-start mt-8 sm:mt-6">
           <div className="text-m sm:text-lg font-bold text-slate-900 dark:text-neutral-300">
-            <span className="align-middle">
-              {post.location}
-            </span>
+            <span className="align-middle">{post.location}</span>
           </div>
           <div className="ml-8 text-m sm:text-lg font-bold text-slate-900 dark:text-neutral-300">
             <span className="align-middle">
@@ -38,7 +36,10 @@ const PostDetail = ({ post }) => {
             content={content}
             renderers={{
               a: ({ children, href }) => (
-                <a class="cursor-pointer text-purple-700 dark:text-purple-400 hover:opacity-50" href={href}>
+                <a
+                  class="cursor-pointer text-purple-700 dark:text-purple-400 hover:opacity-50"
+                  href={href}
+                >
                   {children}
                 </a>
               ),
@@ -53,33 +54,45 @@ const PostDetail = ({ post }) => {
                   {children}
                 </blockquote>
               ),
-              h1: ({ children }) => <h1 className={`text-xl sm:text-2xl pt-3 sm:pt-6 font-bold text-slate-900 dark:text-neutral-200`}>{children}</h1>,
-              h2: ({ children }) => <h2 className={`text-lg sm:text-xl pt-2 sm:pt-4 font-bold text-slate-900 dark:text-neutral-200`}>{children}</h2>,
-              h3: ({ children }) => <h3 className={`text-base sm:text-l pt-1 sm:pt-2 font-bold text-slate-900 dark:text-neutral-200`}>{children}</h3>,
+              h1: ({ children }) => (
+                <h1
+                  className={`text-xl sm:text-2xl pt-3 sm:pt-6 font-bold text-slate-900 dark:text-neutral-200`}
+                >
+                  {children}
+                </h1>
+              ),
+              h2: ({ children }) => (
+                <h2
+                  className={`text-lg sm:text-xl pt-2 sm:pt-4 font-bold text-slate-900 dark:text-neutral-200`}
+                >
+                  {children}
+                </h2>
+              ),
+              h3: ({ children }) => (
+                <h3
+                  className={`text-base sm:text-l pt-1 sm:pt-2 font-bold text-slate-900 dark:text-neutral-200`}
+                >
+                  {children}
+                </h3>
+              ),
               ol: ({ children }) => (
-                <ol
-                  className="pl-6 sm:pl-10 pb-1 list-decimal"
-                >
-                  {children}
-                </ol>),
+                <ol className="pl-6 sm:pl-10 pb-1 list-decimal">{children}</ol>
+              ),
               ul: ({ children }) => (
-                <ul
-                  className="pl-2 sm:pl-10 sm:pb-1 list-square list-outside"
-                >
+                <ul className="pl-2 sm:pl-10 sm:pb-1 list-square list-outside">
                   {children}
-                </ul>),
+                </ul>
+              ),
               li: ({ children }) => (
-                <li
-                  className="pl-1 sm:pl-3 m-2 leading-6 sm:leading-8"
-                >
+                <li className="pl-1 sm:pl-3 m-2 leading-6 sm:leading-8">
                   {children}
-                </li>),
+                </li>
+              ),
               code: ({ children }) => (
-                <code
-                  className="bg-zinc-100 dark:bg-zinc-700 rounded box-decoration-clone py-1 px-2"
-                >
+                <code className="bg-zinc-100 dark:bg-zinc-700 rounded box-decoration-clone py-1 px-2">
                   {children}
-                </code>),
+                </code>
+              ),
             }}
           />
         </div>

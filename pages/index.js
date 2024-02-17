@@ -68,13 +68,6 @@ export default function Home({ posts }) {
             {posts.map((post, index) => (
               <PostCard post={post.node} key={post.title} />
             ))}
-            {/* 
-            I'm not fully sure about this link. On the one hand, it seems like overdoing and overloading the website. On the other hand, it's a nice little feature. Will leave it here for a bit (20/12/22)
-            <div>
-              <a href="https://t.me/iameasytofind" target="_blank" className="flex justify-center mb-10 text-slate-900 dark:text-neutral-200 text-xs sm:text-sm hover:opacity-50">
-                  Read earlier posts on Telegram <img src="/external-link.svg" className="px-0 mx-0 ml-1 sm:ml-2 w-4 sm:w-5 h-4 sm:h-5 dark:invert"></img>
-              </a>
-           </div> */}
           </div>
         </div>
       </div>
